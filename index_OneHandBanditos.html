@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OneHandBanditos</title>
+    <link rel="stylesheet" href="OneHandBanditos.css">
+    <script src="OneHandBanditos.js"></script>
+</head>
+<body>
+    <div id="main" align="center">
+        <p style="font-size: 40px" align="left"><i>Ваш счёт: $</i><span id="cash">100</span></p>
+        <button onclick="help()" id="b1" disabled><p>Попросить <br> денег</p></button>
+
+        <button onclick="start()" id="b2"><p>Старт!</p></button>
+
+        <button onclick="look()" id="b3"><p>Просмотреть <br> комбинации</p></button>
+        <table border="0">
+            <tr>
+                <td><p align="center" id="r1"></p></td>
+                <td><p align="center" id="r2"></p></td>
+                <td><p align="center" id="r3"></p></td>
+            </tr>
+        </table>
+    </div>
+    <div id="look">
+        <h1 align="center"><i>Комбинации</i></h1>
+        <div id="look1">
+            <h2 align="center"><i>Выигрыш</i></h2>
+            <p style="padding-left: 25px;">11* - $100 <br>22* - $200<br>33* - $300<br>44* - $400<br>55* - $500<br>66* - $600<br>77* - $700<br>111 - $1000<br>222 - $2000<br>333 - $3000<br>444 - $5000<br>555 - $10000<br>666 - $25000<br>777 - $100000</p>
+        </div>
+        <div id="look1">
+            <h2 align="center"><i>Проигрыш</i></h2>
+            <p style="padding-left: 25px;">*11 - $100 <br>*22 - $200 <br>*33 - $300 <br>*44 - $400 <br>*55 - $500 <br>*66 - $600 <br>*77 - $700 <br>*00 - $50 <br>000 - $100 <br></p>
+        </div>
+    </div>
+    <div style="clear: both;padding-top: 10px;" align="center">
+        <button style="width:400px;height:100px;" onclick="finish()"><span style="font-size: 50px">Выход</span></button>
+    </div>
+</body>
+</html>

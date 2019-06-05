@@ -1,0 +1,60 @@
+button {
+    width: 175px;
+    height: 95px;
+}
+#main {
+    width: 650px;
+    height: 450px;
+    background: #f975f3;
+    margin-left: 32%;
+    margin-top: 13%;
+    float:left;
+}
+#b1 {
+    float: left;
+}
+#b2 {
+    margin-left: 35px;
+    float: center;
+}
+#b3 {
+    float: right;
+    margin-left: 35px;
+}
+p {
+    font-size: 20px;
+    font-weight: 1000;
+}
+table {
+    margin-top: 10%;
+}
+td {
+    width: 90px;
+    height: 135px;
+    background:url(images/orange.png);
+}
+#r1 {
+    font-size: 45px;
+    font-weight: 1000;
+}
+#r2 {
+    font-size: 45px;
+    font-weight: 1000;
+}
+#r3 {
+    font-size: 45px;
+    font-weight: 1000;
+}
+#look {
+    width: 400px;
+    height: 480px;
+    margin-left: 10px;
+    float:left;
+    margin-top: 13%;
+    background: #f975f3;
+    display: none;
+}
+#look1 {
+    width: 200px;
+    float: left;
+}

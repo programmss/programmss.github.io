@@ -8,3 +8,6 @@ function start() {
         document.location="xo1.html";
     }
 }
+function finish() {
+    document.location = "index.html";
+}

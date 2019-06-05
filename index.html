@@ -2,21 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Krestiki-noliki</title>
-    <script src="xo.js"></script>
-    <style>
-        div {
-            background: url(images/bg.png) no-repeat;
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <h1 align="center">Крестики-Нолики</h1>
+    <h1 align="center">Выберите игру</h1>
     <div style="margin-top:15%;" align="center">
-            <input type="radio" name="r1" id="r1">Против пользователя<br>
-            <input style="margin-top:6px;" type="radio" name="r1" id="r2">Против компьютера<br>
+            <input type="radio" name="r1" id="r1">Крестики-Нолики<br>
+            <input style="margin-top:6px;" type="radio" name="r1" id="r2">OneHandBanditos<br>
             <button style="width:189px;height:41px;margin-top:15px;" onclick="start()">Старт</button><br>
-            <button style="width:189px;height:41px;margin-top:8px;"  onclick="finish()">Выход</button>
     </div>
+    <script>
+        function start() {
+            var r1 = document.getElementById('r1');
+            var r2 = document.getElementById('r2');
+            if (r1.checked) {
+                document.location = 'indexxo.html';
+            }
+            else if (r2.checked) {
+                document.location = "index_OneHandBanditos.html";
+            }
+        }
+    </script>
 </body>
 </html>

@@ -101,7 +101,7 @@ function checkwin() {
                 cash.innerHTML = cashin;
                 alert('Вы выиграли 200$');}
             else if (n1.innerHTML == "3" && n2.innerHTML == "3") {
-                cashin += 200;
+                cashin += 300;
                 cash.innerHTML = cashin;
                 alert('Вы выиграли 300$');}
             else if (n1.innerHTML == "4" && n2.innerHTML == "4") {

@@ -35,6 +35,32 @@ function start() {
     }, 1);
     setTimeout(function(){
         clearInterval(timer3);
+        checkwin();
+        button2.disabled = false;
+                         }, 4000);
+    }
+}
+function help() {
+    cashin += 50;
+    document.getElementById('cash').innerHTML = cashin;
+    document.getElementById('b1').disabled = true;
+    document.getElementById('b2').disabled = false;
+}
+function look() {
+    var div = document.getElementById('look');
+    if (count == 0) {
+        div.style.display = "block";
+        count++;
+    }
+    else if (count == 1) {
+        div.style.display = "none";
+        count--;
+    }
+}
+function finish() {
+    document.location="index.html";
+}
+function checkwin() {
             if (n1.innerHTML == "1" && n2.innerHTML == "1") {
                 cashin += 100;
                 cash.innerHTML = cashin;
@@ -173,27 +199,4 @@ function start() {
                 cash.innerHTML = cashin;
                 alert('Вы проиграли 50000$');
             }
-        button2.disabled = false;
-                         }, 4000);
-    }
-}
-function help() {
-    cashin += 50;
-    document.getElementById('cash').innerHTML = cashin;
-    document.getElementById('b1').disabled = true;
-    document.getElementById('b2').disabled = false;
-}
-function look() {
-    var div = document.getElementById('look');
-    if (count == 0) {
-        div.style.display = "block";
-        count++;
-    }
-    else if (count == 1) {
-        div.style.display = "none";
-        count--;
-    }
-}
-function finish() {
-    document.location="index.html";
 }

@@ -64,35 +64,7 @@ function checkwin() {
     var n1 = document.getElementById('r1');
     var n2 = document.getElementById('r2');
     var n3 = document.getElementById('r3');
-            if (n1.innerHTML == "1" && n2.innerHTML == "1") {
-                cashin += 100;
-                cash.innerHTML = cashin;
-                alert('Вы выиграли 100$');}
-            else if (n1.innerHTML == "2" && n2.innerHTML == "2") {
-                cashin += 200;
-                cash.innerHTML = cashin;
-                alert('Вы выиграли 200$');}
-            else if (n1.innerHTML == "3" && n2.innerHTML == "3") {
-                cashin += 200;
-                cash.innerHTML = cashin;
-                alert('Вы выиграли 300$');}
-            else if (n1.innerHTML == "4" && n2.innerHTML == "4") {
-                cashin += 400;
-                cash.innerHTML = cashin;
-                alert('Вы выиграли 400$');}
-            else if (n1.innerHTML == "5" && n2.innerHTML == "5") {
-                cashin += 500;
-                cash.innerHTML = cashin;
-                alert('Вы выиграли 500$');}
-            else if (n1.innerHTML == "6" && n2.innerHTML == "6") {
-                cashin += 600;
-                cash.innerHTML = cashin;
-                alert('Вы выиграли 600$');}
-            else if (n1.innerHTML == "7" && n2.innerHTML == "7") {
-                cashin += 700;
-                cash.innerHTML = cashin;
-                alert('Вы выиграли 700$');}
-            else if (n1.innerHTML == "1" && n2.innerHTML == "1" && n3.innerHTML == "1") {
+            if (n1.innerHTML == "1" && n2.innerHTML == "1" && n3.innerHTML == "1") {
                 cashin += 1000;
                 cash.innerHTML = cashin;
                 alert('Вы выиграли 1000$');}
@@ -120,11 +92,34 @@ function checkwin() {
                 cashin += 100000;
                 cash.innerHTML = cashin;
                 alert('Вы выиграли 100000$');}
-            else if (n1.innerHTML == "7" || n2.innerHTML == "7" || n3.innerHTML == "7") {
-                cashin += 15;
+            else if (n1.innerHTML == "1" && n2.innerHTML == "1") {
+                cashin += 100;
                 cash.innerHTML = cashin;
-                alert('Вы выиграли 15$');
-            }
+                alert('Вы выиграли 100$');}
+            else if (n1.innerHTML == "2" && n2.innerHTML == "2") {
+                cashin += 200;
+                cash.innerHTML = cashin;
+                alert('Вы выиграли 200$');}
+            else if (n1.innerHTML == "3" && n2.innerHTML == "3") {
+                cashin += 200;
+                cash.innerHTML = cashin;
+                alert('Вы выиграли 300$');}
+            else if (n1.innerHTML == "4" && n2.innerHTML == "4") {
+                cashin += 400;
+                cash.innerHTML = cashin;
+                alert('Вы выиграли 400$');}
+            else if (n1.innerHTML == "5" && n2.innerHTML == "5") {
+                cashin += 500;
+                cash.innerHTML = cashin;
+                alert('Вы выиграли 500$');}
+            else if (n1.innerHTML == "6" && n2.innerHTML == "6") {
+                cashin += 600;
+                cash.innerHTML = cashin;
+                alert('Вы выиграли 600$');}
+            else if (n1.innerHTML == "7" && n2.innerHTML == "7") {
+                cashin += 700;
+                cash.innerHTML = cashin;
+                alert('Вы выиграли 700$');}
             else if (n2.innerHTML == "1" && n3.innerHTML == "1") {
                 if (cashin - 100 < 0) {cashin = 0;}
                 else {
@@ -196,5 +191,10 @@ function checkwin() {
                 }
                 cash.innerHTML = cashin;
                 alert('Вы проиграли 50000$');
+            }
+            else if (n1.innerHTML == "7" || n2.innerHTML == "7" || n3.innerHTML == "7") {
+                cashin += 15;
+                cash.innerHTML = cashin;
+                alert('Вы выиграли 15$');
             }
 }

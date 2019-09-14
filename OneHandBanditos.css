@@ -48,9 +48,10 @@ td {
 #look {
     width: 400px;
     height: 480px;
-    margin-left: 10px;
+    margin-left: 66%;
     float:left;
-    margin-top: 13%;
+    margin-top: 248px;
+    position: absolute;
     background: #f975f3;
     display: none;
 }

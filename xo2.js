@@ -107,7 +107,14 @@ function b9() {
     }
 }
 function random1() {
-    if (mas[0] == 'x' && mas[1] == 'x') {
+    if (mas[4] == 'x') {
+        if (mas[2] == '') {
+            document.getElementById('t3').innerHTML="<img style='width:75px;height:75px;' src='images/nolik.png'>";
+            mas[2] = 'o';
+        }
+            else {random2();}
+    }
+    else if (mas[0] == 'x' && mas[1] == 'x') {
         if (mas[2] == '') {
             document.getElementById('t3').innerHTML="<img style='width:75px;height:75px;' src='images/nolik.png'>";
             mas[2] = 'o';

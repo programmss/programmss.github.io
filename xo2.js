@@ -114,6 +114,13 @@ function random1() {
         }
             else {random2();}
     }
+    else if (mas[4] == 'x' && mas[6] == 'x') {
+        if (mas[8] == '') {
+            document.getElementById('t9').innerHTML="<img style='width:75px;height:75px;' src='images/nolik.png'>";
+            mas[8] = 'o';
+        }
+            else {random2();}
+    }
     else if (mas[0] == 'x' && mas[1] == 'x') {
         if (mas[2] == '') {
             document.getElementById('t3').innerHTML="<img style='width:75px;height:75px;' src='images/nolik.png'>";

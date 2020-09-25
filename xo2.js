@@ -140,6 +140,14 @@ function random1() {
             else {random2();}
         s++;
     }
+    else if (mas[4] == 'x' && mas[7] == 'x') {
+        if (mas[1] == '') {
+            document.getElementById('t2').innerHTML="<img style='width:75px;height:75px;' src='images/nolik.png'>";
+            mas[1] = 'o';
+        }
+            else {random2();}
+        s++;
+    }
     else if (mas[1] == 'x' && mas[2] == 'x') {
         if (mas[0] == '') {
             document.getElementById('t1').innerHTML="<img style='width:75px;height:75px;' src='images/nolik.png'>";
@@ -152,6 +160,22 @@ function random1() {
         if (mas[5] == '') {
             document.getElementById('t6').innerHTML="<img style='width:75px;height:75px;' src='images/nolik.png'>";
             mas[5] = 'o';
+        }
+            else {random2();}
+        s++;
+    }
+    else if (mas[1] == 'x' && mas[4] == 'x') {
+        if (mas[7] == '') {
+            document.getElementById('t8').innerHTML="<img style='width:75px;height:75px;' src='images/nolik.png'>";
+            mas[7] = 'o';
+        }
+            else {random2();}
+        s++;
+    }
+    else if (mas[1] == 'x' && mas[7] == 'x') {
+        if (mas[4] == '') {
+            document.getElementById('t5').innerHTML="<img style='width:75px;height:75px;' src='images/nolik.png'>";
+            mas[4] = 'o';
         }
             else {random2();}
         s++;
@@ -216,30 +240,6 @@ function random1() {
         if (mas[0] == '') {
             document.getElementById('t1').innerHTML="<img style='width:75px;height:75px;' src='images/nolik.png'>";
             mas[0] = 'o';
-        }
-            else {random2();}
-        s++;
-    }
-    else if (mas[1] == 'x' && mas[4] == 'x') {
-        if (mas[7] == '') {
-            document.getElementById('t8').innerHTML="<img style='width:75px;height:75px;' src='images/nolik.png'>";
-            mas[7] = 'o';
-        }
-            else {random2();}
-        s++;
-    }
-    else if (mas[1] == 'x' && mas[7] == 'x') {
-        if (mas[4] == '') {
-            document.getElementById('t5').innerHTML="<img style='width:75px;height:75px;' src='images/nolik.png'>";
-            mas[4] = 'o';
-        }
-            else {random2();}
-        s++;
-    }
-    else if (mas[4] == 'x' && mas[7] == 'x') {
-        if (mas[1] == '') {
-            document.getElementById('t2').innerHTML="<img style='width:75px;height:75px;' src='images/nolik.png'>";
-            mas[1] = 'o';
         }
             else {random2();}
         s++;

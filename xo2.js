@@ -9,6 +9,7 @@ var t7;
 var t8;
 var t9;
 var check = false;
+var s = 0;
 function b1() {
     var button = document.getElementById('b1').value;
     var t1 = document.getElementById('t1');
@@ -107,19 +108,21 @@ function b9() {
     }
 }
 function random1() {
-    if (mas[4] == 'x') {
+    if (s == 0 && mas[4] == 'x') {
         if (mas[2] == '') {
             document.getElementById('t3').innerHTML="<img style='width:75px;height:75px;' src='images/nolik.png'>";
             mas[2] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[4] == 'x' && mas[6] == 'x') {
         if (mas[8] == '') {
             document.getElementById('t9').innerHTML="<img style='width:75px;height:75px;' src='images/nolik.png'>";
             mas[8] = 'o';
         }
-            else {random2();}
+        else {random2();}
+        s++;
     }
     else if (mas[0] == 'x' && mas[1] == 'x') {
         if (mas[2] == '') {
@@ -127,6 +130,7 @@ function random1() {
             mas[2] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[0] == 'x' && mas[2] == 'x') {
         if (mas[1] == '') {
@@ -134,6 +138,7 @@ function random1() {
             mas[1] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[1] == 'x' && mas[2] == 'x') {
         if (mas[0] == '') {
@@ -141,6 +146,7 @@ function random1() {
             mas[0] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[3] == 'x' && mas[4] == 'x') {
         if (mas[5] == '') {
@@ -148,6 +154,7 @@ function random1() {
             mas[5] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[3] == 'x' && mas[5] == 'x') {
         if (mas[4] == '') {
@@ -155,6 +162,7 @@ function random1() {
             mas[4] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[4] == 'x' && mas[5] == 'x') {
         if (mas[3] == '') {
@@ -162,6 +170,7 @@ function random1() {
             mas[3] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[6] == 'x' && mas[7] == 'x') {
         if (mas[8] == '') {
@@ -169,6 +178,7 @@ function random1() {
             mas[8] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[6] == 'x' && mas[8] == 'x') {
         if (mas[7] == '') {
@@ -176,6 +186,7 @@ function random1() {
             mas[7] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[7] == 'x' && mas[8] == 'x') {
         if (mas[6] == '') {
@@ -183,6 +194,7 @@ function random1() {
             mas[6] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[0] == 'x' && mas[3] == 'x') {
         if (mas[6] == '') {
@@ -190,6 +202,7 @@ function random1() {
             mas[6] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[0] == 'x' && mas[6] == 'x') {
         if (mas[3] == '') {
@@ -197,6 +210,7 @@ function random1() {
             mas[3] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[3] == 'x' && mas[6] == 'x') {
         if (mas[0] == '') {
@@ -204,6 +218,7 @@ function random1() {
             mas[0] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[1] == 'x' && mas[4] == 'x') {
         if (mas[7] == '') {
@@ -211,6 +226,7 @@ function random1() {
             mas[7] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[1] == 'x' && mas[7] == 'x') {
         if (mas[4] == '') {
@@ -218,6 +234,7 @@ function random1() {
             mas[4] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[4] == 'x' && mas[7] == 'x') {
         if (mas[1] == '') {
@@ -225,6 +242,7 @@ function random1() {
             mas[1] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[2] == 'x' && mas[5] == 'x') {
         if (mas[8] == '') {
@@ -232,6 +250,7 @@ function random1() {
             mas[8] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[2] == 'x' && mas[8] == 'x') {
         if (mas[5] == '') {
@@ -239,6 +258,7 @@ function random1() {
             mas[5] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[5] == 'x' && mas[8] == 'x') {
         if (mas[4] == '') {
@@ -246,6 +266,7 @@ function random1() {
             mas[2] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[0] == 'x' && mas[4] == 'x') {
         if (mas[8] == '') {
@@ -253,6 +274,7 @@ function random1() {
             mas[8] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[0] == 'x' && mas[8] == 'x') {
         if (mas[4] == '') {
@@ -260,6 +282,7 @@ function random1() {
             mas[4] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[4] == 'x' && mas[8] == 'x') {
         if (mas[0] == '') {
@@ -267,6 +290,7 @@ function random1() {
             mas[0] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[2] == 'x' && mas[4] == 'x') {
         if (mas[6] == '') {
@@ -274,6 +298,7 @@ function random1() {
             mas[6] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[2] == 'x' && mas[6] == 'x') {
         if (mas[4] == '') {
@@ -281,6 +306,7 @@ function random1() {
             mas[4] = 'o';
         }
             else {random2();}
+        s++;
     }
     else if (mas[4] == 'x' && mas[6] == 'x') {
         if (mas[2] == '') {
@@ -288,6 +314,7 @@ function random1() {
             mas[2] = 'o';
         }
             else {random2();}
+        s++;
     }
     else {random2();}
 }

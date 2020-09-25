@@ -116,7 +116,7 @@ function random1() {
             else {random2();}
         s++;
     }
-    else if (mas[4] == 'x' && mas[6] == 'x') {
+    else if (mas[4] == 'x' && mas[6] == 'x' && s == 1) {
         if (mas[8] == '') {
             document.getElementById('t9').innerHTML="<img style='width:75px;height:75px;' src='images/nolik.png'>";
             mas[8] = 'o';
